@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
 import api from '../../services/api'
 import { Container } from './styles'
-import Header from '../../Components/Header'
+import Header from '../../components/Header'
+import Title from '../../components/Title'
 
 function Home() {
   // const [category, setCategory] = useState()
@@ -20,7 +21,7 @@ function Home() {
     <>
       <Header title="Dev Mobile" />
       <Container>
-        <h3>Categorias</h3>
+        <Title text="Categorias" />
       </Container>
     </>
   )
