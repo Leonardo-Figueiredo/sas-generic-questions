@@ -6,5 +6,5 @@ export const Container = styled.div`
 `
 export const Text = styled.h1`
   font-size: 20px;
-  color: #333355;
+  color: #343b57;
 `
