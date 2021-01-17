@@ -1,20 +1,28 @@
 import { useCallback } from 'react'
+import { useHistory } from 'react-router-dom'
 import api from '../../services/api'
-import { Container, ButtonGroup } from './styles'
 import Header from '../../components/Header'
 import Title from '../../components/Title'
 import CategoryButton from '../../components/CategoryButton'
+import { Container, ButtonGroup } from './styles'
 
 function Home() {
-  const fetchQuestionByCategory = useCallback(async category_id => {
-    const { data: question } = await api.get(null, {
-      params: {
-        category: category_id,
-      },
-    })
+  const { push } = useHistory()
 
-    console.log(question)
-  }, [])
+  const fetchQuestionByCategory = useCallback(
+    async category_id => {
+      const { data: question } = await api.get(null, {
+        params: {
+          category: category_id,
+          difficulty: 'medium',
+        },
+      })
+
+      push('/quiz')
+      console.log(question)
+    },
+    [push],
+  )
 
   return (
     <>
