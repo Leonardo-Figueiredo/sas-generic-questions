@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  height: 100%;
   margin: 5px;
   padding: 20px;
   background: #ffffff;
@@ -9,7 +10,7 @@ export const Container = styled.div`
   flex-direction: column;
   flex: 1;
 `
-export const AnswerButton = styled.button`
+export const ClickableAnswer = styled.button`
   background: #fff;
   border: 0;
   border-radius: 6px;
