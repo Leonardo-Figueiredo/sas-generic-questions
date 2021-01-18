@@ -12,5 +12,6 @@ export const Container = styled.div`
 
   p {
     font-size: 12px;
+    color: #343b57;
   }
 `

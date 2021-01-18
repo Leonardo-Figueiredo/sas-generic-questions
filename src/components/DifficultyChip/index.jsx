@@ -15,20 +15,20 @@ function DifficultyChip({ difficulty }) {
   useEffect(() => {
     switch (difficulty) {
       case 'easy':
-        setEasyCollor('#333')
+        setEasyCollor('#343b57')
         setTranslatedDifficulty('Fácil')
         break
 
       case 'medium':
-        setEasyCollor('#333')
-        setMediumCollor('#333')
+        setEasyCollor('#343b57')
+        setMediumCollor('#343b57')
         setTranslatedDifficulty('Médio')
         break
 
       case 'hard':
-        setEasyCollor('#333')
-        setMediumCollor('#333')
-        setHardCollor('#333')
+        setEasyCollor('#343b57')
+        setMediumCollor('#343b57')
+        setHardCollor('#343b57')
         setTranslatedDifficulty('Difícil')
         break
 
