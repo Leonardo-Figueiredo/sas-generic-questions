@@ -16,12 +16,15 @@ function DifficultyChip({ difficulty }) {
     switch (difficulty) {
       case 'easy':
         setEasyCollor('#343b57')
+        setMediumCollor('#aaa')
+        setHardCollor('#aaa')
         setTranslatedDifficulty('Fácil')
         break
 
       case 'medium':
         setEasyCollor('#343b57')
         setMediumCollor('#343b57')
+        setHardCollor('#aaa')
         setTranslatedDifficulty('Médio')
         break
 
@@ -33,9 +36,9 @@ function DifficultyChip({ difficulty }) {
         break
 
       default:
-        setEasyCollor('#ccc')
-        setMediumCollor('#ccc')
-        setHardCollor('#ccc')
+        setEasyCollor('#aaa')
+        setMediumCollor('#aaa')
+        setHardCollor('#aaa')
         setTranslatedDifficulty('')
         break
     }
