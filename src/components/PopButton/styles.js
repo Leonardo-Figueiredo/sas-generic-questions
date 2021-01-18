@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   position: absolute;
   bottom: 0;
+  background: #fff;
 
   display: flex;
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
@@ -17,7 +18,7 @@ export const Container = styled.div`
   ${({ show }) =>
     show &&
     css`
-      animation: FadeIn 1s;
+      animation: FadeIn 0.5s;
     `}
 
   @keyframes FadeIn {

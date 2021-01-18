@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 
 import { Container, Button } from './styles'
 
-function PopButton({ show, text }) {
+function PopButton({ show, text, ...rest }) {
   return (
     <Container show={show}>
-      <Button>{text}</Button>
+      <Button {...rest}>{text}</Button>
     </Container>
   )
 }
