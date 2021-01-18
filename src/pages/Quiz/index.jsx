@@ -49,14 +49,6 @@ function Quiz({ location }) {
     if (penultimateAnswer && antepenultimateAnswer && question) {
       switch (question.difficulty) {
         case 'easy':
-          console.log(
-            'easy => penultimateAnswer.hit_the_answer',
-            penultimateAnswer.hit_the_answer,
-          )
-          console.log(
-            'easy => antepenultimateAnswer.hit_the_answer',
-            antepenultimateAnswer.hit_the_answer,
-          )
           if (
             penultimateAnswer.hit_the_answer &&
             antepenultimateAnswer.hit_the_answer
@@ -66,14 +58,6 @@ function Quiz({ location }) {
           break
 
         case 'medium':
-          console.log(
-            'medium => penultimateAnswer.hit_the_answer',
-            penultimateAnswer.hit_the_answer,
-          )
-          console.log(
-            'medium => antepenultimateAnswer.hit_the_answer',
-            antepenultimateAnswer.hit_the_answer,
-          )
           if (
             penultimateAnswer.hit_the_answer &&
             antepenultimateAnswer.hit_the_answer
@@ -103,10 +87,6 @@ function Quiz({ location }) {
     }
   }, [penultimateAnswer, antepenultimateAnswer, question])
 
-  useEffect(() => {
-    console.log('categoryId', categoryId)
-  }, [categoryId])
-
   const sendSelectedAnswer = useCallback(
     async selectedAnswer => {
       const answerPayload = {
@@ -130,8 +110,6 @@ function Quiz({ location }) {
           difficulty,
         },
       })
-
-      console.log('=>>.', data)
 
       const questionData = data.results[0]
 
