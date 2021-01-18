@@ -63,3 +63,5 @@ yarn build
 - Modal com resultado imediato se o usuário acertou ou errou a pergunta []
 - Persistir dados enviados a Context API para o local storage []
 - Testes unitários e UI []
+
+LinkedIn: www.linkedin.com/in/leonardo-rodrigues-figueiredo
