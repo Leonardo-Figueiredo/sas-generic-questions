@@ -3,11 +3,11 @@ import { createContext, useContext, useCallback, useState } from 'react'
 const QuizContext = createContext({})
 
 export const QuizProvider = ({ children }) => {
-  const [savedAnswers, setSavedAnswers] = useState()
+  const [savedAnswers, setSavedAnswers] = useState([])
 
   const saveAnswer = useCallback(
-    ({ questionPayload }) => {
-      setSavedAnswers([...savedAnswers, ...questionPayload])
+    questionPayload => {
+      setSavedAnswers([...savedAnswers, questionPayload])
     },
 
     [savedAnswers],
