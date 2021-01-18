@@ -11,15 +11,19 @@ function Home() {
 
   const fetchQuestionByCategory = useCallback(
     async category_id => {
-      const { data: question } = await api.get(null, {
+      const { data } = await api.get(null, {
         params: {
           category: category_id,
           difficulty: 'medium',
         },
       })
 
-      push('/quiz')
-      console.log(question)
+      const question = data.results[0]
+
+      push('/quiz', {
+        question,
+        category_id,
+      })
     },
     [push],
   )
