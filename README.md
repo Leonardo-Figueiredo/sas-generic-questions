@@ -1,6 +1,6 @@
 # Teste Técnico - Dev Frontend - SAS
 
-Documentação do Frontend desenvolvido..
+Documentação do Frontend desenvolvido.
 
 ## Stack / Bibliotecas utilizadas
 
